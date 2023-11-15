@@ -7,6 +7,13 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.web.SecurityFilterChain;
 
+
+/*
+configuração das segurancas de rotas..permissões e autorização.
+ * 
+ */
+
+
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig {
@@ -29,12 +36,3 @@ public class SecurityConfig {
 }
 
 
-
-/*
- 
- * authorizeConfig -> {
-                  authorizeConfig.requestMatchers(...patterns: "/public").permitAll();
-                  authorizeConfig..requestMatchers(...patterns: "/logout").permitAll();
-                  authorizeConfig.anyRequest().authenticated();
-            }
- */
