@@ -30,7 +30,7 @@ public class SecurityConfig {
             authorizeConfig.anyRequest().authenticated();
 
         })
-       .formLogin(Customizer.withDefaults()) // DEIXAR O FORMULARIO PADRÃO DO SPRING BOOT SECURITY.
+       .oauth2Login(Customizer.withDefaults()) // FORMULARIO PADRÃO DO GOOGLE.
     .build();
     }
 }
